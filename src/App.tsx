@@ -22,7 +22,9 @@ function App() {
 
   function handleUndo() {
     if (currentMove > 0) {
-      setCurrentMove(currentMove - 1);
+      const newHistory = history.slice(0, currentMove);
+      setHistory(newHistory);
+      setCurrentMove(newHistory.length - 1);
     }
   }
 
