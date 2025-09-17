@@ -1,4 +1,4 @@
-import type { SquareProps } from "../types/types";
+import type { SquareProps } from "../types";
 
 export function Square({ value, onSquareClick }: SquareProps) {
   return (
